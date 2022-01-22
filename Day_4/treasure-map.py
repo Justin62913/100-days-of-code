@@ -8,9 +8,12 @@ position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
-map_input = position.split()
-print(map_input)
+map_input = position
+map_position1 = int(map_input[0])
+map_position2 = int(map_input[1])
 
+map_index = map[map_position2 - 1]
+map_index[map_position1 - 1] = "X"
 
 
 
